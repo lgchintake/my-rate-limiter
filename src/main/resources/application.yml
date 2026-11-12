@@ -1,1 +1,7 @@
-spring.application.name=my-rate-limiter
+spring:
+  application:
+    name: my-rate-limiter
+  profiles:
+    active: dev
+bootui:
+  enabled: true

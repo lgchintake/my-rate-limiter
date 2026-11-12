@@ -19,12 +19,17 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+    implementation 'com.bucket4j:bucket4j_jdk17-core:8.22.0'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testCompileOnly 'org.projectlombok:lombok'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+
+    // Groovy DSL (build.gradle)
+    runtimeOnly 'com.julien-dubois.bootui:bootui-spring-boot-starter:2.4.0'
+
 }
 
 tasks.named('test') {
